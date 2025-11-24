@@ -8,7 +8,7 @@ app = Flask(__name__, static_folder="static",template_folder="templates")
 
 
 def init_server():
-    print("[+] Start C2 server..")
+    print("[+] Start Amaterasu..")
     server_thread = threading.Thread(target=server.start_server , daemon= True)
     server_thread.start()
 
